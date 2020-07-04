@@ -65,11 +65,11 @@ const Navbar = () => {
     <Divider/>
     <List>
       {menuItems.map((lsItem, key)=> (
-      <ListItem button>
+      <ListItem button key={key}>
         <ListItemIcon>
           {lsItem.listIcon}
         </ListItemIcon>
-        <ListItemText/>
+        <ListItemText primary={lsItem.listText} />
       </ListItem>
       ))}
     </List>
