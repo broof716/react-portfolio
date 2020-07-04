@@ -1,26 +1,8 @@
 import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import MobilRightMenuSlider from '@material-ui/core/Drawer';
-import {
-  AppBar,
-  Toolbar,
-  ListItem,
-  IconButton,
-  ListItemText,
-  Avatar,
-  Divider,
-  List,
-  Typography,
-  Box,
-  ListItemIcon
-} from "@material-ui/core"
-import {
-  ArrowBack,
-  AssignmentInd,
-  Home,
-  Apps,
-  ContactMail
-} from "@material-ui/icons"
+import {AppBar, Toolbar, ListItem, IconButton, ListItemText, Avatar, Divider, List, Typography, Box, ListItemIcon} from "@material-ui/core"
+import {ArrowBack, AssignmentInd, Home, Apps, ContactMail} from "@material-ui/icons"
 import avatar from '../bryan.png'
 
 // CSS STYLES
@@ -73,7 +55,7 @@ const Navbar = () => {
 
   const sideList = slider => (
 
-    <Box className={classes.menuSliderContainer} component="div">
+    <Box className={classes.menuSliderContainer} component="div" onClick={toggleSlider(slider, false)}>
     <Avatar className={classes.avatar} src={avatar} alt="Bryan Roof"/>
     <Divider/>
     <List>
