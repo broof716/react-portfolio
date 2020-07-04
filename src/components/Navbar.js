@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme=>({
   menuSliderContainer : {
     width: 250,
     background: "#511",
-    height: "30rem"
+    height: "100%"
   },
   avatar: {
     display: "block",
@@ -97,7 +97,7 @@ const Navbar = () => {
           <Typography variant="h5" style={{color: "tan"}}>
             Portfolio
           </Typography>
-          <MobilRightMenuSlider open={state.right}>
+          <MobilRightMenuSlider anchor="right" open={state.right} onClose={toggleSlider("right", false)}>
             {sideList("right")}
           </MobilRightMenuSlider>
         </Toolbar>
