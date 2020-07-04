@@ -9,6 +9,10 @@ const Header = () => {
       <Avatar src={avatar} alt="Bryan Roof"/> 
       <Typography variant="h4">
         <Typed strings={["Bryan Roof"]} typeSpeed={40} />
+      </Typography>
+      <br/>
+      <Typography variant="h5">
+        <Typed strings={["Web Design", "Web Development", "React Developer"]} typeSpeed={40} backSpeed={60} loop />
       </Typography>   
     </Box>
   );
