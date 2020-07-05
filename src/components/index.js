@@ -6,9 +6,10 @@ import {makeStyles} from '@material-ui/styles'
 
 const useStyles = makeStyles({
   particlesCanva: {
-    position: "absolute"
+    position: "absolute",
+    opacity: "0.3"
   }
-})
+});
 
 const Home = () => {
 
