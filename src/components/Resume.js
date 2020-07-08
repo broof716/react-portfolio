@@ -1,10 +1,30 @@
-import React from 'react'
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles'; 
+import { Typography, Box } from '@material-ui/core';
+import Navbar from './Navbar';
+
+const useStyles = makeStyles({
+  mainContainer: {
+    background: "#233"
+  }
+});
 
 const Resume = () => {
+  const classes = useStyles();
   return (
-    <div>
-      Hello from resume components
-    </div>
+    <>
+    <Navbar />
+      <Box component="header" className={classes.mainContainer}>
+        <Typography variant="h4" align="center">
+          working experience
+        </Typography>
+        <Box component="div">
+          <Typography variant="h2">
+            2013
+          </Typography>
+        </Box>
+      </Box>
+    </>
   )
 }
 
