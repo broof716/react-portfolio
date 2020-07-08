@@ -42,6 +42,7 @@ const Portfolio = () => {
                     on Heroku.
                   </Typography>
                 </CardContent>
+                </CardActionArea>
                 <CardActions>
                   <Button size="small" color="primary">
                     Share
@@ -50,7 +51,6 @@ const Portfolio = () => {
                     Live Demo
                   </Button>
                 </CardActions>
-              </CardActionArea>
             </Card>
           </Grid>
             {/* Project 2 */}
@@ -66,6 +66,7 @@ const Portfolio = () => {
                     A Yelp clone that integrates with the Google Maps API and includes features like user comments, star ratings, image uploading, and user authentication.
                   </Typography>
                 </CardContent>
+                </CardActionArea>
                 <CardActions>
                   <Button size="small" color="primary">
                     Share
@@ -74,7 +75,6 @@ const Portfolio = () => {
                     Live Demo
                   </Button>
                 </CardActions>
-              </CardActionArea>
             </Card>
           </Grid>
             {/* Project 3 */}
@@ -90,6 +90,7 @@ const Portfolio = () => {
                     A Yelp clone that integrates with the Google Maps API and includes features like user comments, star ratings, image uploading, and user authentication.
                   </Typography>
                 </CardContent>
+                </CardActionArea>
                 <CardActions>
                   <Button size="small" color="primary">
                     Share
@@ -98,7 +99,6 @@ const Portfolio = () => {
                     Live Demo
                   </Button>
                 </CardActions>
-              </CardActionArea>
             </Card>
           </Grid>
            {/* Project 4 */}
@@ -114,6 +114,7 @@ const Portfolio = () => {
                     A Yelp clone that integrates with the Google Maps API and includes features like user comments, star ratings, image uploading, and user authentication.
                   </Typography>
                 </CardContent>
+                </CardActionArea>
                 <CardActions>
                   <Button size="small" color="primary">
                     Share
@@ -122,7 +123,6 @@ const Portfolio = () => {
                     Live Demo
                   </Button>
                 </CardActions>
-              </CardActionArea>
             </Card>
           </Grid>
             {/* Project 5 */}
@@ -139,6 +139,7 @@ const Portfolio = () => {
                     fluid user interface that– by using JavaScript– allows users to rapidly add dynamic content.
                   </Typography>
                 </CardContent>
+                </CardActionArea>
                 <CardActions>
                   <Button size="small" color="primary">
                     Share
@@ -147,7 +148,6 @@ const Portfolio = () => {
                     Live Demo
                   </Button>
                 </CardActions>
-              </CardActionArea>
             </Card>
           </Grid>
             {/* Project 6 */}
@@ -163,6 +163,7 @@ const Portfolio = () => {
                     Crafted a note taking application by employing React.js, JavaScript ES6, and CSS as the front-end, and a Ruby on Rails API for the backend. 
                   </Typography>
                 </CardContent>
+                </CardActionArea>
                 <CardActions>
                   <Button size="small" color="primary">
                     Share
@@ -171,7 +172,6 @@ const Portfolio = () => {
                     Live Demo
                   </Button>
                 </CardActions>
-              </CardActionArea>
             </Card>
           </Grid>
         </Grid>
