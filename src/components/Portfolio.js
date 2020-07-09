@@ -17,7 +17,6 @@ const useStyles = makeStyles({
   },
   cardContainer: {
     maxWidth: 450,
-    margin: "3rem",
     margin: "5rem auto"
   }
 })
@@ -44,10 +43,10 @@ const Portfolio = () => {
                 </CardContent>
                 </CardActionArea>
                 <CardActions>
-                  <Button size="small" color="primary">
-                    Share
+                  <Button href="https://github.com/broof716/Bryan-Roof" target="_blank" size="small" color="primary">
+                    GitHub
                   </Button>
-                  <Button size="small" color="primary">
+                  <Button href="https://splurty-bryan-roof.herokuapp.com/" target="_blank" size="small" color="primary">
                     Live Demo
                   </Button>
                 </CardActions>
@@ -68,10 +67,10 @@ const Portfolio = () => {
                 </CardContent>
                 </CardActionArea>
                 <CardActions>
-                  <Button size="small" color="primary">
-                    Share
+                  <Button href="https://github.com/broof716/nomster" target="_blank" size="small" color="primary">
+                    GitHub
                   </Button>
-                  <Button size="small" color="primary">
+                  <Button href="https://nomster-bryan-roof.herokuapp.com/" target="_blank" size="small" color="primary">
                     Live Demo
                   </Button>
                 </CardActions>
@@ -87,15 +86,15 @@ const Portfolio = () => {
                    Two Sided Marketplace
                   </Typography>
                   <Typography varaint="body2" color="textSecondary" component="p">
-                    A Yelp clone that integrates with the Google Maps API and includes features like user comments, star ratings, image uploading, and user authentication.
+                    A two-sided, video-streaming marketplace platform that features credit card payment capabilities, user role management, complex user interfaces, and advanced database relationships.
                   </Typography>
                 </CardContent>
                 </CardActionArea>
                 <CardActions>
-                  <Button size="small" color="primary">
-                    Share
+                  <Button href="https://github.com/broof716/flixter" target="_blank" size="small" color="primary">
+                    GitHub
                   </Button>
-                  <Button size="small" color="primary">
+                  <Button href="https://flixter-bryan-roof.herokuapp.com/" target="_blank" size="small" color="primary">
                     Live Demo
                   </Button>
                 </CardActions>
@@ -116,10 +115,10 @@ const Portfolio = () => {
                 </CardContent>
                 </CardActionArea>
                 <CardActions>
-                  <Button size="small" color="primary">
-                    Share
+                  <Button href="https://github.com/broof716/grammabled" target="_blank" size="small" color="primary">
+                    GitHub
                   </Button>
-                  <Button size="small" color="primary">
+                  <Button href="https://grammabled-bryan-roof.herokuapp.com/" target="_blank" size="small" color="primary">
                     Live Demo
                   </Button>
                 </CardActions>
@@ -141,10 +140,10 @@ const Portfolio = () => {
                 </CardContent>
                 </CardActionArea>
                 <CardActions>
-                  <Button size="small" color="primary">
-                    Share
+                  <Button href="https://github.com/broof716/todo" target="_blank" size="small" color="primary">
+                    GitHub
                   </Button>
-                  <Button size="small" color="primary">
+                  <Button href="https://todo-bryan-roof.herokuapp.com/" target="_blank" size="small" color="primary">
                     Live Demo
                   </Button>
                 </CardActions>
@@ -165,10 +164,10 @@ const Portfolio = () => {
                 </CardContent>
                 </CardActionArea>
                 <CardActions>
-                  <Button size="small" color="primary">
-                    Share
+                  <Button href="https://github.com/broof716/note-app" target="_blank" size="small" color="primary">
+                    GitHub
                   </Button>
-                  <Button size="small" color="primary">
+                  <Button href="https://note-app-bryan-roof.herokuapp.com/" target="_blank" size="small" color="primary">
                     Live Demo
                   </Button>
                 </CardActions>
