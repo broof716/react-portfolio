@@ -1,95 +1,80 @@
 import React from 'react'
-import { makeStyles, withStyles } from '@material-ui/core/styles'
-import { TextField, Typography, Button, Grid, Box} from '@material-ui/core'
-import SendIcon from '@material-ui/icons/Send'
-import Navbar from './Navbar'
+import { makeStyles } from '@material-ui/styles'
+import { BottomNavigation, BottomNavigationAction } from '@material-ui/core'
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import EmailIcon from '@material-ui/icons/Email';
+import FolderIcon from '@material-ui/icons/Folder';
+import Navbar from './Navbar';
+import { Typography, Box } from '@material-ui/core';
 
-const useStyles = makeStyles(theme=>({
-  form: {
-    top: "40%",
-    left: "40%",
-    transform: "translate(-50%, -50%",
-    position: "absolute"
-  },
-  button: {
-    marginTop: "1rem",
-    color: "tomato",
-    borderColor: "tomato",
-  },
-}))
-
-const Inputfield = withStyles({
+const useStyles = makeStyles({
   root: {
-    "& label.Mui-focused": {
-      color: "tomato"
+    "& .MuiBottomNavigationAction-root": {
+      minWidth: 0,
+      maxWidth: 250,
+      maxHeight: 250
     },
-    "& label": {
-      color: "tan"
+    "& .MuiSvgIcon-root": {
+      fill: "tan",
+      "&:hover": {
+        fill: "tomato",
+        fontSize: "3rem",
+      },
     },
-    "& .MuiOutlinedInput-root": {
-      "& fieldSet": {
-        borderColor: "tan",
-      },
-      "&:hover fieldSet": {
-        borderColor: "tan",
-      },
-      "&.Mui-focused fieldSet": {
-        boarderColor: "tan",
-      },
-    }
-  },
-})(TextField);
+  }
+});
 
 const Contacts = () => {
-
+  
   const classes = useStyles()
-
   return (
-    <Box component="div" style={{background: "#233", height: "100vh"}}>
-      <Navbar />
-      <Grid container justify="center">
-        <Box component="form" className={classes.form}>
-          <Typography 
-            variant="h5" 
-            style={{
-              color: "tomato", 
-              textAlign: "center", 
-              textTransform: "uppercase",
-            }}
-          >
-            hire or contact me...
+    <>
+    <Navbar />
+    <Box component="header" color="tomato" className={classes.mainContainer}>
+        <Typography variant="h1" align="center">
+          Contact Me
+        </Typography>
+        <br />
+        <Box component="div" color="tan">
+          <Typography variant="h3" align="center">
+            Currently entertaining new opportunities. Please get in touch via: 
           </Typography>
-          <Inputfield 
-            fullWidth={true} 
-            label="Name" 
-            variant="outlined" 
-            inputProps={{style:{ color: "white"}}} 
-            margin="dense"
-            size="medium" 
-          />
           <br />
-          <Inputfield fullWidth={true} label="Email" variant="outlined" inputProps={{style:{ color: "white"}}} margin="dense"size="medium" />
           <br />
-          <Inputfield 
-            fullWidth={true} 
-            label="Phone Number" 
-            variant="outlined" 
-            inputProps={{style:{ color: "white"}}}
-            margin="dense"
-            size="medium" 
-          />
+          <Typography variant="h4" align="center">
+            Contact Infomation
+          </Typography>
           <br />
-          <Button 
-            className={classes.button} 
-            variant="outlined" 
-            fullWidth={true} 
-            endIcon={<SendIcon/>}>
-            contact me
-          </Button>
+          <Typography variant="h4" align="center">
+            (520)429-8569
+          </Typography>
         </Box>
-      </Grid>
-    </Box>
+      </Box>
+      <br />
+      <br />
+      <br />
+      <br />
+    <BottomNavigation style={{background: "#222"}}>
+      <BottomNavigationAction 
+      className={classes.root}  
+        icon={<LinkedInIcon onClick={event =>  window.location.href="https://www.linkedin.com/in/bryan-roof/"}/>}
+      />
+      <BottomNavigationAction 
+      className={classes.root}
+        icon={<GitHubIcon onClick={event =>  window.location.href="https://github.com/broof716"}/>}
+      />
+      <BottomNavigationAction
+      className={classes.root}
+        icon={<EmailIcon onClick={event =>  window.location.href="mailto:broof716@gmail.com"}/>}
+      />
+      <BottomNavigationAction
+      className={classes.root}
+        icon={<FolderIcon onClick={event =>  window.location.href="mailto:broof716@gmail.com"}/>}
+      />
+    </BottomNavigation>
+    </>
   )
 }
 
-export default Contacts;
+export default Contacts

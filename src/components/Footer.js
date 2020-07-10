@@ -28,17 +28,17 @@ const Footer = () => {
       <BottomNavigationAction 
       className={classes.root}
         style={{padding: 0}}
-        icon={<LinkedInIcon/>}
+        icon={<LinkedInIcon onClick={event =>  window.location.href="https://www.linkedin.com/in/bryan-roof/"}/>}
       />
       <BottomNavigationAction 
       className={classes.root}
         style={{padding: 0}}
-        icon={<GitHubIcon/>}
+        icon={<GitHubIcon onClick={event =>  window.location.href="https://github.com/broof716"}/>}
       />
       <BottomNavigationAction
       className={classes.root}
         style={{padding: 0}}
-        icon={<EmailIcon/>}
+        icon={<EmailIcon onClick={event =>  window.location.href="mailto:broof716@gmail.com"}/>}
       />
     </BottomNavigation>
   )

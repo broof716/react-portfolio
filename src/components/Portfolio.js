@@ -12,8 +12,8 @@ import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles({
   mainContainer: {
-    background: "#233",
-    height: "100%"
+    height: "100%",
+    border: "solid"
   },
   cardContainer: {
     maxWidth: 450,
